@@ -1,4 +1,5 @@
-#1.连接TF卡到Ubuntu虚机，查看分区状态
+1.连接TF卡到Ubuntu虚机，查看分区状态
+==
 ```
 lazy@ubuntu:~/Documents$ sudo fdisk -l
 Disk /dev/sdb: 29.74 GiB, 31914983424 bytes, 62333952 sectors
@@ -16,7 +17,8 @@ Device     Boot  Start     End Sectors  Size Id Type
 ```
 
 
-#2.下载xfce img，使用dd命令将镜像烧录到TF卡
+2.下载xfce img，使用dd命令将镜像烧录到TF卡
+==
 ```
 lazy@ubuntu:~/Documents$ bzcat openEuler-D1-xfce.img.bz2 | sudo dd of=/dev/sdb bs=1M iflag=fullblock oflag=direct conv=fsync status=progress
 3242196992 bytes (3.2 GB, 3.0 GiB) copied, 180 s, 18.0 MB/s
@@ -24,7 +26,9 @@ lazy@ubuntu:~/Documents$ bzcat openEuler-D1-xfce.img.bz2 | sudo dd of=/dev/sdb b
 3096+1 records out
 3247012352 bytes (3.2 GB, 3.0 GiB) copied, 180.257 s, 18.0 MB/s
 ```
-#3.查看TF状态
+
+3.查看TF状态
+==
 ```
 lazy@ubuntu:~/Documents$ sudo fdisk -l /dev/sdb
 Disk /dev/sdb: 29.74 GiB, 31914983424 bytes, 62333952 sectors
@@ -42,7 +46,8 @@ Device      Start     End Sectors  Size Type
 /dev/sdb4  100832 6341820 6240989    3G Linux filesystem
 ```
 
-#4.对sdb4进行扩容
+4.对sdb4进行扩容
+==
 其中：
 * first sector要和原来sdb4的start扇区保持一致
 * last sector不用填写，直接回车就可以
@@ -85,8 +90,8 @@ Syncing disks.
 
 lazy@ubuntu:~/Documents$ 
 ```
-
-#5.调整分区大小，如果出现如下报错，需要拔插一下TF卡
+5.调整分区大小，如果出现如下报错，需要拔插一下TF卡
+==
 ```
 lazy@ubuntu:~/Documents$ sudo resize2fs /dev/sdb4
 resize2fs 1.45.5 (07-Jan-2020)
