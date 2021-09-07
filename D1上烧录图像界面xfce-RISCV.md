@@ -1,3 +1,5 @@
+流程参考：[memo](https://github.com/mollybuild/RISCV-Measurement/blob/master/install-docker-on-D1-oE-and-run-docker-linux.md)
+
 烧录镜像
 ==
 1.连接TF卡到Ubuntu虚机，查看分区情况
