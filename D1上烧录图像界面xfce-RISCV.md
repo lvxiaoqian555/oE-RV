@@ -1,4 +1,4 @@
-1.连接TF卡到Ubuntu虚机，查看分区状态
+1.连接TF卡到Ubuntu虚机，查看分区情况
 ==
 ```
 lazy@ubuntu:~/Documents$ sudo fdisk -l
