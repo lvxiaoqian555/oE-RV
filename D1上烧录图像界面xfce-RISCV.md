@@ -118,8 +118,8 @@ The filesystem on /dev/sdb4 is now 31116540 (1k) blocks long.
 ls /dev/cu.usbserial-*
 ```
 * 波特率：115200
-串口连上以后登录：root/openEuler12#$
-使用命令w或uptime可以查看负载
+* 串口连上以后登录：root/openEuler12#$
+* 使用命令w或uptime可以查看负载
 
 2.HDMI连接D1
 --
