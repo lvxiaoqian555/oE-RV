@@ -1,4 +1,4 @@
-流程参考：[memo](https://github.com/mollybuild/RISCV-Measurement/blob/master/install-docker-on-D1-oE-and-run-docker-linux.md)
+流程参考：[https://github.com/mollybuild/RISCV-Measurement/blob/master/install-docker-on-D1-oE-and-run-docker-linux.md](https://github.com/mollybuild/RISCV-Measurement/blob/master/install-docker-on-D1-oE-and-run-docker-linux.md)
 
 烧录镜像
 ==
