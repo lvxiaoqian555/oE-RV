@@ -106,3 +106,21 @@ The filesystem on /dev/sdb4 is now 31116540 (1k) blocks long.
 ```
 
 至此镜像烧录完成
+
+启动D1
+==
+1.串口线接入电脑
+--
+* Windows需要下载驱动（串口线驱动FT232R（串口线供应商提供版本）），macOS不需要
+* windows需要到设备管理器中查询com口
+* macOS需要在terminal里查看端口名称
+```
+ls /dev/cu.usbserial-*
+```
+* 波特率：115200
+串口连上以后登录：root/openEuler12#$
+使用命令w或uptime可以查看负载
+
+2.HDMI连接D1
+--
+显示器可能不显示桌面，拔插一下HDMI，出现桌面
