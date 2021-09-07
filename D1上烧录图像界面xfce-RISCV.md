@@ -1,7 +1,6 @@
 1.连接TF卡到Ubuntu虚机，查看分区状态
 ```
 lazy@ubuntu:~/Documents$ sudo fdisk -l
-```
 Disk /dev/sdb: 29.74 GiB, 31914983424 bytes, 62333952 sectors
 Disk model: STORAGE DEVICE  
 Units: sectors of 1 * 512 = 512 bytes
@@ -13,7 +12,6 @@ Disk identifier: 0x8ea7b95f
 Device     Boot  Start     End Sectors  Size Id Type
 /dev/sdb1  *     35296  100831   65536   32M  c W95 FAT32 (LBA)
 /dev/sdb2       100832 2619391 2518560  1.2G  e W95 FAT16 (LBA)
-```
 /dev/sdb3            1    2079    2079    1M  e W95 FAT16 (LBA)
 ```
 
